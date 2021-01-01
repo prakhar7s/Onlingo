@@ -1,0 +1,131 @@
+.commentsMain {
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  width: 100%;
+  margin: 20px 10px;
+}
+
+.commentsMain__Container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  min-width: 90%;
+  max-width: 90%;
+  margin-left: 20px;
+}
+.commentsMain__avatar {
+  margin-right: 14px;
+}
+
+.commentsMain__avatar .MuiAvatar-root {
+  margin: 10px;
+  margin-top: 8px;
+  margin: 10px;
+}
+
+.commentsMain__CommentsContainer {
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.commentsMain__UsernameTime {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+/* 13 */
+.commentsMain__UsernameTime::before {
+  position: absolute;
+  border-width: 10px 15px 7px 0;
+  border-style: solid;
+  border-color: transparent rgba(128, 128, 128, 0.4);
+  height: 0;
+  width: 0;
+  display: block;
+  content: "";
+  color: wheat;
+  top: 5px;
+  left: -15px;
+}
+
+.commentsMain_UT {
+  display: flex;
+  flex: 1;
+}
+.commentsMain_UT h1 {
+  font-size: 100%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.commentsMain_UT p {
+  font-size: 10px;
+  margin-top: 13px;
+  font-weight: bold;
+  word-break: break-all;
+  width: 118px;
+}
+
+.commentsMain__likeButton Button {
+  color: blue;
+}
+
+.commentsMain__comment {
+  line-height: 24px;
+  font-size: 17px;
+  margin: 5px;
+  font-weight: bolder;
+  width: 97%;
+  word-break: break-all;
+}
+
+/* no comments */
+.noComments__text {
+  margin-top: 45%;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.commentMain__vertMoreButton {
+  position: relative;
+}
+
+.commentMain__vertMoreButton .MuiSvgIcon-root {
+  color: white;
+}
+
+.deleteContainer .MuiSvgIcon-root {
+  color: black;
+}
+
+.commentMain__vertMoreButton .deleteContainer {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  display: none;
+  left: -35px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding: 5px;
+  top: 40px;
+  width: 80px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+.commentMain__vertMoreButton .deleteContainer:hover {
+  background-color: red;
+}
+
+.deleteContainer h2 {
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}

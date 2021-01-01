@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+
+.signin {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(135deg, #ea5c54 0%, #bb6dec 100%);
+}
+.title {
+  font-family: "Lato", sans-serif;
+  margin: 50px;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.singinText {
+  margin: 20px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  margin-left: 30px;
+  color: white;
+  font-family: "Cairo", sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.signin__container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background: linear-gradient(45deg, #35394a, #1f222e 100%);
+  position: relative;
+}
+
+.create__account > p {
+  display: inline;
+}
+
+.signin__input {
+  outline: none;
+  border-width: 0;
+  padding: 5px 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: transform 100ms ease-in-out;
+  border: 2px solid #363a4d;
+  background-color: transparent;
+  width: 86%;
+  color: white;
+  padding-left: 20px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+}
+
+.signin__input::placeholder {
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  color: #ffffff4f;
+}
+
+.signin__passwordInput {
+  position: relative;
+}
+.passVisi {
+  position: absolute;
+  top: 0;
+  outline: none;
+  border-width: 0;
+  background-color: transparent;
+  font-size: 17px;
+  right: 25px;
+  top: 13px;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+.post__submit {
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  border-width: 0;
+}
+
+.signin__emailInput {
+  width: 100%;
+  background-color: #32354a;
+  margin-bottom: 10px;
+}
+
+.signin__passwordInput {
+  width: 100%;
+  background-color: #32354a;
+}
+
+.signin__buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 15px;
+}
+
+.signin__buttons button {
+  padding: 10px;
+  width: 135px;
+  border-radius: 8px;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.571);
+  outline: none;
+  backdrop-filter: blur(16px);
+  border-width: 0;
+  color: rgba(255, 255, 255, 0.808);
+  cursor: pointer;
+}
+
+.signin__buttons button:hover {
+  color: white;
+}
+
+.signin__buttons h2 {
+  color: rgba(255, 255, 255, 0.747);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 12px;
+  text-align: center;
+}
+
+/* FORGOT PASSWORD */
+.forgotPasswordSignin {
+  font-family: "Cairo", sans-serif;
+  background-color: transparent;
+  font-weight: bolder;
+  color: white;
+  outline: none;
+  border-width: 0;
+  font-size: 18px;
+  font-family: "Cairo", sans-serif;
+  color: rgba(248, 250, 246, 0.84);
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.forgotPasswordSignin:hover {
+  color: white;
+}
+.forgotPassword {
+  position: absolute;
+  /* background-color: rgba(0, 0, 0, 0.85); */
+  background: linear-gradient(#0000001a, #00000010);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  z-index: 1;
+}
+
+.forgotPassword h1 {
+  margin: 40px;
+  margin-bottom: 58px;
+  font-family: "Lato", sans-serif;
+}
+
+.forgotPassword .forgotPasswordInput {
+  background-color: rgb(10, 10, 20);
+  backdrop-filter: blur(10px);
+  display: flex;
+  box-shadow: 6px 19px 38px rgba(0, 0, 0, 0.8), 0 5px 7px rgba(0, 0, 0, 0.52);
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 31.3%;
+  height: 61%;
+  font-family: "Cairo", sans-serif;
+  border-radius: 20px;
+}
+
+.forgotPassword .forgotPasswordInput p:first-child {
+  width: 72%;
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  font-size: 22px;
+  margin: 30px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+.forgotPassword .forgotPasswordInput input {
+  width: 70%;
+  margin: 20px;
+  padding: 3px;
+  font-size: 20px;
+  background: #c4c2c2;
+  outline: none;
+  border-width: 0;
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  /* border-radius: 5px; */
+  color: black;
+}
+
+.forgotPassword .forgotPasswordInput input::placeholder {
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  color: rgba(0, 0, 0, 0.57);
+}
+
+.forgotPassword .forgotPasswordInput button {
+  width: 30%;
+  margin: 20px;
+  padding: 5px;
+  align-self: center;
+  background: transparent;
+  font-size: 18px;
+  font-family: "Cairo", sans-serif;
+  outline: none;
+  border-width: 0;
+  color: rgba(255, 255, 255, 0.753);
+  backdrop-filter: blur(15px);
+  background-color: rgba(22, 54, 240, 0.644);
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.forgotPassword .forgotPasswordInput button:hover {
+  color: white;
+}
+
+.msgAfterClick {
+  margin-top: 20px;
+  color: red;
+  font-size: 17px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.334);
+  width: 75%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.backToSigInButton {
+  position: absolute;
+  left: 0;
+  background: transparent;
+  outline: none;
+  border-width: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 17px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.backToSigInButton span {
+  margin-left: 10px;
+}
+
+/* back to main */
+
+.backToMainFromSignin {
+  position: absolute;
+  left: 0;
+  background: transparent;
+  outline: none;
+  border-width: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 17px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.backToMainFromSignin span {
+  margin-left: 10px;
+}
+/* sign in error */
+.errorInSignIn {
+  color: white;
+  width: 95%;
+  margin: 10px;
+  color: #ea5c54;
+  font-weight: bolder;
+  font-size: 15px;
+  font-family: "Cairo";
+  margin-bottom: 0;
+  position: absolute;
+  left: 0;
+  top: 47%;
+
+  cursor: pointer;
+}

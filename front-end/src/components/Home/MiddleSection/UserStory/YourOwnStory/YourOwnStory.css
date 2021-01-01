@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+.yourOwnStory {
+  height: 81%;
+  width: 95px;
+  margin-top: 20px;
+}
+
+/* Story */
+.uploadedStory_DPP {
+  height: 80px;
+  width: 80px;
+  pointer-events: auto;
+}
+
+.uploadedStory_DPP img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.yourOwnStory .yourName {
+  color: rgba(225, 227, 230, 0.938);
+  font-family: "Mulish", sans-serif;
+  margin: 15px 0px;
+  text-align: center;
+  width: 80px;
+}
+
+.yourStoryUploaded {
+  position: relative;
+  pointer-events: none;
+}
+
+.yourStoryUploaded svg {
+  position: absolute;
+  top: -10px;
+  left: -11px;
+  width: 102px;
+  height: 102px;
+}
+
+.yourStoryUploaded svg circle {
+  fill: transparent;
+  stroke-width: 2;
+  stroke: url(#insta-normal);
+  stroke-linecap: round;
+  stroke-dasharray: 5;
+  transform-origin: 50% 50%;
+}
+
+/* !Story */
+
+.yourDPAvatar {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  pointer-events: auto;
+}
+
+.yourDPAvatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.yourDPAvatar:before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  height: 92px;
+  width: 94px;
+  background-color: rgba(21, 44, 145, 0.418);
+  border-radius: 50%;
+}
+.yourDPAvatar:after {
+  content: "+";
+  position: absolute;
+  top: 19%;
+  left: 36%;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  font-family: "Lato", sans-serif;
+}
+
+/* !Story */
+.yourStoryNotUploaded {
+  position: relative;
+  pointer-events: none;
+}
+
+.yourStoryNotUploaded svg {
+  width: 102px;
+  height: 102px;
+  position: absolute;
+  top: -10px;
+  left: -11px;
+  /* animation: dash 50s linear infinite; */
+}
+
+.yourStoryNotUploaded svg circle {
+  fill: transparent;
+  stroke-width: 2;
+  stroke: url(#insta-normal);
+  stroke-linecap: round;
+  stroke-dasharray: 5;
+  pointer-events: none;
+}
+
+@keyframes dash {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* create story */
+.storyCreater {
+  position: fixed;
+  top: 0;
+  left: 23%;
+  height: 100%;
+  width: 77%;
+  background-color: #031920be;
+  z-index: 10;
+  color: white;
+  backdrop-filter: blur(12px);
+}
+
+/* Your story */
+
+.storyView {
+  background-color: rgba(3, 17, 48, 0.904);
+  backdrop-filter: blur(15px);
+  height: 100%;
+  width: 76.9%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 23.1%;
+}
+
+/* uploading */
+.storyUploading {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(1, 6, 17, 0.493);
+  backdrop-filter: blur(7px);
+  line-height: 700px;
+  text-align: center;
+  font-family: "Cairo";
+  font-weight: bolder;
+  font-size: 25px;
+  display: none;
+}
+
+/* x and del btn */
+.storyView button {
+  font-size: 20px;
+  margin: 10px;
+  color: rgba(247, 1, 1, 0.836);
+  background-color: transparent;
+  outline: none;
+  backdrop-filter: blur(10px);
+  border-width: 0;
+}
+
+.storyView button:nth-child(2) {
+  margin-left: 93%;
+}
+
+.storyCreaterCloseButton {
+  font-size: 24px;
+  margin: 10px;
+  color: rgba(245, 14, 14, 0.918);
+  background-color: transparent;
+  outline: none;
+  border-width: 0;
+  text-align: start;
+  width: 98%;
+}
+/* delete notification*/
+.showDeletedStory {
+  background-color: rgba(0, 0, 0, 0.36);
+  height: 120px;
+  width: 45%;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  top: 75%;
+  left: 55%;
+  text-align: center;
+  z-index: 1;
+  margin-right: 20px;
+  font-family: "Lato", sans-serif;
+  animation: starting 1500ms linear;
+  font-size: 23px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  line-height: 130px;
+  font-family: "Cairo";
+  background: -webkit-repeating-linear-gradient(410deg, #f00f35, #fcd810 80%);
+  background-clip: text;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  z-index: 100;
+}

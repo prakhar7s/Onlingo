@@ -1,0 +1,68 @@
+.chatsContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 8.5% 91.4%;
+  grid-template-areas:
+    "chatsHeading chatsList"
+    "chatsChattingArea chatsList";
+}
+
+.chatsHeading {
+  grid-area: chatsHeading;
+  /* background: linear-gradient(
+    270deg,
+    #17334b 0,
+    #233747 25%,
+    #0e223f 50%,
+    #22254c 75%,
+    #22254c 100%
+  ); */
+  background: linear-gradient(#0849d6, #0969f8);
+  background: linear-gradient(#020e30, #01011a);
+  background: linear-gradient(#41d8dd, #41d8dd);
+}
+
+.chatsChattingArea {
+  grid-area: chatsChattingArea;
+  /* background: linear-gradient(
+    -45deg,
+    #183850 0,
+    #183850 25%,
+    #192c46 50%,
+    #22254c 75%,
+    #22254c 100%
+  ); */
+  /* background-color: #1d0035; */
+  background: linear-gradient(#0567a3, #0567a3);
+  background: linear-gradient(#41d8dd, #5583ee);
+}
+
+.chatsList {
+  grid-area: chatsList;
+  background: rgba(0, 0, 0, 1);
+  /* background-color: #53649f; */
+  overflow: scroll;
+  position: relative;
+  color: white;
+  font-family: "Lato", sans-serif;
+  border-left: 1px solid rgba(128, 128, 128, 0.26);
+}
+
+.chatsList::-webkit-scrollbar {
+  height: 0;
+  width: 7px;
+  background-color: transparent;
+}
+
+.chatsList::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+/* welcome */
+.chatsChattingArea__welcome {
+  margin-top: 40%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Cairo", sans-serif;
+  font-size: 18px;
+}

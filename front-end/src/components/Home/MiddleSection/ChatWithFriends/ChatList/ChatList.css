@@ -1,0 +1,47 @@
+.ChatListContainer__emptyList {
+  margin-top: 50%;
+  font-size: 16px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+/* Header */
+.currentChattingHeader {
+  position: fixed;
+  top: 0;
+  left: 23%;
+  width: 50.1%;
+  height: 8.5%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(1, 1, 17);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+  border-left: 1px solid rgba(128, 128, 128, 0.323);
+}
+
+.currentChattingHeaderDP {
+  height: 40px;
+  width: 40px;
+  margin: 5px 10px;
+  border: 2px solid rgba(255, 255, 255, 0.368);
+  border-radius: 29%;
+}
+
+.currentChattingHeaderDP img {
+  height: 100%;
+  width: 100%;
+  border-radius: 29%;
+}
+
+.currentChattingHeader .currentChattingHeaderNameAndUsername h1 {
+  font-size: 18px;
+}
+
+.currentChattingHeader .currentChattingHeaderNameAndUsername h2 {
+  font-size: 14px;
+  margin-top: 1px;
+  color: rgba(255, 255, 255, 1);
+}

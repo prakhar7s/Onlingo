@@ -1,0 +1,27 @@
+.ChatList__searchContainer {
+  width: 70%;
+  display: flex;
+  margin: 20px 15%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.ChatList__searchContainer input {
+  width: 90%;
+  background-color: transparent;
+  outline: none;
+  border-width: 0;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ChatList__searchContainer input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ChatList__searchContainer .MuiSvgIcon-root {
+  color: white;
+}

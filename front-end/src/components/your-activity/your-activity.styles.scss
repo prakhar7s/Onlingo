@@ -1,0 +1,143 @@
+.your-activity {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 35px;
+    font-weight: bolder;
+  }
+
+  .select-no-of-days {
+    position: absolute;
+    top: 33%;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+
+    select {
+      outline: none;
+      background: #f73353;
+      border-width: 0;
+      padding: 5px;
+      font-size: 15px;
+      color: white;
+      font-family: "Lato", sans-serif;
+      font-weight: bolder;
+
+      option {
+        padding: 15px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-family: "Roboto";
+      font-weight: bolder;
+      color: rgba(255, 255, 255, 0.877);
+    }
+  }
+
+  .avg-wrapper {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Lato";
+    font-weight: bolder;
+
+    .avg-time {
+      font-size: 40px;
+      background: -webkit-repeating-linear-gradient(
+        20deg,
+        #d62442,
+        #ebce28 80%
+      );
+      background-clip: text;
+      font-weight: bolder;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
+    }
+    span {
+      font-size: 20px;
+    }
+
+    .daily-avg {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.988);
+    }
+
+    .daily-avg-para {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.88);
+      font-family: "Lato", sans-serif;
+    }
+  }
+
+  .bar-container {
+    width: 96%;
+    background: #02021f;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    box-shadow: 6px 19px 38px rgba(0, 0, 0, 0.8), 0 5px 7px rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+    justify-self: center;
+
+    .bar-wrapper {
+      width: 100%;
+      background-color: gray;
+      position: relative;
+      margin: 0 10px;
+
+      .bar {
+        background: linear-gradient(to top, #d62442, #ebce28);
+        width: 100%;
+        animation: 1s bar-animation linear;
+      }
+
+      h1,
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        position: absolute;
+        top: -20px;
+        font-size: 13px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      h2 {
+        font-size: 0.65em;
+        bottom: -20px;
+        position: absolute;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  }
+}
+
+@keyframes bar-animation {
+  from {
+    height: 0;
+  }
+
+  to {
+  }
+}

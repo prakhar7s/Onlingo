@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
+.leftSection {
+  border-right: 1px solid rgba(128, 128, 128, 0.123);
+  /* background: #1f252c; */
+  /* background: #232b35; */
+  /* background: linear-gradient(to right bottom, #212933, #061018); */
+  cursor: pointer;
+  /* background: linear-gradient(to right bottom, #1d242c, #061018); */
+  background: linear-gradient(to bottom, rgb(1, 3, 36), rgb(7, 0, 0));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.3;
+  /* overflow: scroll; */
+  /* overflow-x: hidden; */
+
+  /* background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  ); */
+  /* -webkit-background-clip: text; */
+  /* Also define standard property for compatibility */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.leftSection::-webkit-scrollbar {
+  width: 6px;
+}
+
+.app__name {
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.app__name > h1 {
+  color: white;
+  font-size: 35px;
+  font-family: "Pacifico", cursive; /* font-family: "Sofia", cursive; */
+
+  background: -webkit-repeating-linear-gradient(110deg, #ffa600, #f5280d 80%);
+
+  background-clip: text;
+  font-weight: 100;
+  -webkit-text-fill-color: transparent;
+}
+
+.app__name div {
+  height: 38px;
+  width: 60px;
+  overflow: hidden;
+  display: none;
+}
+
+.app__name img {
+  height: 60px;
+  width: 60px;
+}
+
+.user__profile {
+  margin: 15px 10px;
+  margin-top: 0;
+  width: 100%;
+  animation: fade 2s linear;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Skeleton Loading */
+.skeletonLoaderForUserInfo:empty {
+  top: 80px;
+  width: 40%;
+  left: 4%;
+  height: 250px;
+  /* background-color: rgba(255, 0, 0, 0.1); */
+  position: absolute;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.562) 20px,
+      transparent 0px
+    ),
+    linear-gradient(lightgray 20px, transparent 0),
+    linear-gradient(rgba(255, 255, 255, 0.562) 20px, transparent 0px),
+    linear-gradient(lightgray 20px, transparent 0),
+    linear-gradient(rgba(255, 255, 255, 0.562) 30px, transparent 0px),
+    linear-gradient(lightgray 30px, transparent 0),
+    linear-gradient(rgba(255, 255, 255, 0.562) 30px, transparent 0px),
+    linear-gradient(lightgray 30px, transparent 0),
+    linear-gradient(rgba(255, 255, 255, 0.562) 30px, transparent 0px),
+    linear-gradient(lightgray 30px, transparent 0);
+  background-repeat: repeat-y;
+
+  background-size: 5px 255px, 200px 250px, 5px 250px, 160px 250px, 8px 250px,
+    60px 250px, 8px 250px, 60px 250px, 8px 250px, 60px 250px;
+
+  background-position: 40px 85px, 40px 86px, 60px 125px, 60px 125px, 15px 185px,
+    15px 185px, 110px 185px, 110px 185px, 205px 185px, 205px 185px;
+
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 235px 85px, 40px 86px, 215px 125px, 60px 125px,
+      65px 185px, 15px 185px, 160px 185px, 110px 185px, 255px 185px, 205px 185px;
+  }
+}
+
+.userPublicInformationsFriPostLikes {
+  animation: fade 2s linear;
+}
+
+.user__profile > h1 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: 8px;
+  margin-bottom: 0;
+  /* background-color: rebeccapurple; */
+}
+
+.user__profile > h1:nth-child(2) {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 15px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.904);
+  /* background-color: red; */
+}
+
+.user__profile > h1:nth-child(3) {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.user__profile {
+  position: relative;
+}
+
+/* .user__profile .MuiAvatar-root {
+  margin: 10px;
+  margin-top: 8px;
+  margin: 10px;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+} */
+
+.user_profileProfilePic {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.user_profileProfilePic img {
+  width: 100%;
+  box-shadow: 6px 0px 38px rgba(0, 0, 0, 0.8), 0 5px 7px rgba(0, 0, 0, 0.52);
+  border-radius: 50px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-pic-circle {
+  position: absolute;
+  top: -25px;
+  left: -1px;
+}
+
+.profile-pic-circle circle {
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 2;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  flex: 0.4;
+  position: relative;
+}
+
+/* active option */
+/* old */
+/* .optionsActiveStatus {
+  height: 16.5%;
+  background-color: #092c57;
+  background: linear-gradient(110deg, #d62442, #ebce28 80%);
+    width: 4px;
+  position: absolute;
+  right: -0px;
+  top: 0%;
+  transition: 0.5s all linear;
+} */
+
+/* new */
+.optionsActiveStatus {
+  height: 16.5%;
+  /* background-color: #092c57; */
+  background: linear-gradient(110deg, #f865403f 10%, transparent 100%);
+  border-left: 5px solid #dd4632;
+  width: 110%;
+  position: absolute;
+  left: 0;
+  top: -1.4%;
+  transition: 0.6s all linear;
+}
+
+.leftsection__options {
+  width: 88%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  padding-left: 40px;
+  /* transition: transform 2s ease-in-out; */
+  transition: all ease-in-out 150ms;
+  /* background-color: rebeccapurple; */
+  margin-right: 30px;
+}
+.leftsection__options h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+.options .MuiSvgIcon-root {
+  color: rgba(255, 255, 255, 0.733);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.leftsection__options:hover {
+  transform: scale(0.95, 1);
+}
+.signoutButton {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: transparent;
+  padding-left: 25px;
+  display: flex;
+  outline: 0;
+  border-width: 0;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.096);
+  padding-top: 15px;
+  position: relative;
+}
+
+.signoutButton h1 {
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+  font-size: 16px;
+  font-weight: bolder;
+  font-family: "Lato", sans-serif;
+}
+
+/* left section figures */
+.userPublicInformationsFriPostLikes {
+  display: flex;
+  color: white;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.userPublicInformationsFriPostLikesVerticalLines {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.178);
+}
+.userPublicInformationsFriPostLikes h1 {
+  font-size: 18px;
+  font-family: "Roboto";
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.userPublicInformationsFriPostLikes h3 {
+  margin: 10px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  /* background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent; */
+}
+
+/* loading animation */
+.LeftSectionFigureLoading:empty {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: linear-gradient(
+      100deg,
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(0, 0, 0, 0) 80%
+    ),
+    linear-gradient(lightgray 20px, transparent 0);
+
+  background-repeat: repeat-y;
+
+  background-size: 5px 50px, 20px 20px;
+
+  background-position: 0 0, 0px 10px;
+
+  animation: shine 1s infinite;
+}
+
+/* @keyframes shine {
+  to {
+    background-position: 100% 0, 0px 10px;
+  }
+} */

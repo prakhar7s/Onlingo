@@ -1,0 +1,31 @@
+.userStory {
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  height: 150px;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  border-radius: 10px;
+  animation: fade 0.5s linear;
+  cursor: pointer;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.youOWN__story {
+  margin: 0 20px;
+
+  margin-right: 0;
+}
+
+.userStory::-webkit-scrollbar {
+  height: 7px;
+}

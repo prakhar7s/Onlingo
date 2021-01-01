@@ -1,0 +1,122 @@
+/* You */
+.msgSentByYou {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 25px;
+  margin-right: 0px;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+}
+.msgSentByYou .chatMessageParagraph {
+  background-color: rgb(3, 5, 34);
+  font: 17px "Lato", sans-serif;
+  border-radius: 8px;
+  margin-right: 25px;
+  min-height: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+  max-width: 92%;
+  padding: 11px 13px;
+  position: relative;
+  /* color: #29d4c3; */
+  color: white;
+  box-shadow: 0 23px 38px rgba(0, 0, 0, 0.38), 0 20px 12px rgba(0, 0, 0, 0.22);
+  font-weight: bolder;
+}
+
+.msgSentByYou .chatMessageParagraph::after {
+  position: absolute;
+  top: 15px;
+  right: -18px;
+  content: "";
+  height: 0px;
+  width: 0px;
+  border-right: 18px solid transparent;
+  border-top: 18px solid rgb(3, 5, 34);
+}
+
+/* !You */
+.msgNotSentByYou {
+  margin: 25px;
+  display: flex;
+  margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+  padding: 15px;
+}
+
+.msgNotSentByYou .chatMessageParagraph {
+  box-shadow: 0 23px 38px rgba(0, 0, 0, 0.38), 0 20px 12px rgba(0, 0, 0, 0.22);
+
+  background-color: rgb(3, 5, 34);
+  font: 17px "Lato", sans-serif;
+  border-radius: 8px;
+  margin-left: 25px;
+  min-height: 20px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  max-width: 60%;
+  padding: 11px 13px;
+  position: relative;
+  /* color: #23df91; */
+
+  color: white;
+  font-weight: bolder;
+}
+
+.msgNotSentByYou .chatMessageParagraph::after {
+  position: absolute;
+  top: 15px;
+  left: -18px;
+  content: "";
+  height: 0px;
+  width: 0px;
+  border-left: 18px solid transparent;
+  border-top: 18px solid rgb(3, 5, 34);
+}
+
+.messageImgContainer {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+}
+
+.messageImgContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 23px 38px rgba(0, 0, 0, 0.38), 0 20px 12px rgba(0, 0, 0, 0.22);
+}
+
+.messageSentAt {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  margin: 10px;
+  font-weight: 800;
+  position: absolute;
+}
+
+.msgSentByYou .messageSentAt {
+  right: 20px;
+}
+
+.msgSentByYou .messageSentAt {
+  margin-right: 25px;
+  text-align: end;
+}
+
+.msgNotSentByYou .messageSentAt {
+  margin-left: 25px;
+}
+
+.messageSentAt:hover ~ .messageSentAtFull {
+  display: flex;
+  color: rebeccapurple;
+}
+
+.messageSentAtFull {
+  display: none;
+  /* visibility: hidden; */
+}

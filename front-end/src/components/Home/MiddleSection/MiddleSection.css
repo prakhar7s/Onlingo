@@ -1,0 +1,131 @@
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  position: relative;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  /* background: #3d3e52; */
+  /* background: rgba(7, 6, 6, 0.95); */
+  /* background-color: #141618; */
+  background: linear-gradient(
+    to top,
+    rgba(1, 1, 32, 0.993),
+    rgba(1, 2, 26, 0.993)
+  );
+  /* background-color: #28223f; */
+  /* background-color: #111; */
+  /* background-color: #202124; */
+  /* background-color: rgba(0, 0, 0, 0.87); */
+}
+
+.user__upload {
+  margin: 10px 40px 10px;
+  height: 450px;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.beforeFeedArea {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin: auto;
+}
+
+.beforeFeedArea h1 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 26px;
+  margin-left: 27px;
+}
+
+.changeView {
+  flex: 0.2;
+  position: relative;
+}
+
+.changeView button {
+  outline: none;
+  border-width: 0;
+  padding: 5px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.changeViewActiveButton {
+  height: 20px;
+  font-size: 19px;
+  background: -webkit-repeating-linear-gradient(110deg, #d62442, #ebce28 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  bottom: -3px;
+  left: 16%;
+  text-align: center;
+}
+
+.feed__area {
+  width: 96%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 34% 34% 34%;
+  margin: 3% 2%;
+  row-gap: 15px;
+  column-gap: 2px;
+  animation: fade 2s linear;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.803);
+}
+
+.middleSearch__Searching {
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 12%;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.userStoryHeadingInMiddle {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.884);
+  margin: 10px 10px;
+  margin-left: 50px;
+  font-family: "Lato", sans-serif;
+}
+
+.userUploadHeadingInMiddle {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.884);
+  margin: 30px 10px;
+  margin-left: 50px;
+  font-family: "Lato", sans-serif;
+}

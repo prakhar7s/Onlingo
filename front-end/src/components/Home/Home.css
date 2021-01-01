@@ -1,0 +1,18 @@
+.home {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin-top: -10px;
+  background-size: cover;
+  padding-bottom: 10px;
+  overflow: hidden;
+  overflow-x: hidden;
+  /* border: 1px solid salmon; */
+}
+
+.sections {
+  margin-top: 10px;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}

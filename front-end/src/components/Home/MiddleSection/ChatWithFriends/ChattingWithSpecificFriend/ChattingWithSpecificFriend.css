@@ -1,0 +1,91 @@
+.chatsMessagesContainer {
+  height: 91.9%;
+  overflow: scroll;
+  padding-right: 10px;
+}
+
+.chatsMessageInputContainer {
+  height: 7.9%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(128, 128, 128, 0.26);
+}
+.chatsMessageInputContainer form {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgb(1, 1, 17);
+  display: flex;
+  height: 100%;
+}
+
+.chatsMessageInputContainer button {
+  visibility: hidden;
+}
+
+.chatsMessageInputContainer button::after {
+  top: 8px;
+  right: 6px;
+  content: "";
+  position: absolute;
+  background: linear-gradient(to top, #e40d31, #e9b119 80%);
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  visibility: visible;
+}
+
+.chatsMessageInputContainer input {
+  width: 89%;
+  margin: 8px 10px;
+  font-family: "Cairo", sans-serif;
+  outline: none;
+  border-width: 0;
+  color: black;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bolder;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+.chatsMessageInputContainer input::placeholder {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Roboto", sans-serif;
+}
+
+.chatsMessageInputContainer .MuiSvgIcon-root {
+  color: black;
+  /* margin: 10px; */
+  margin-top: 10px;
+  margin-left: 0;
+  position: absolute;
+  left: 94.5%;
+  top: 4px;
+}
+
+.chatsMessagesContainer::-webkit-scrollbar {
+  height: 0;
+  width: 9px;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  cursor: pointer;
+}
+
+.chatsMessagesContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.chatsMessagesContainer__empty {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.755);
+  margin-top: 40%;
+  font-size: 20px;
+  text-transform: lowercase;
+}
+
+/* emoji */
+.chatsMessageInputContainerEmojiPicker {
+  /* color: rebeccapurple; */
+  position: absolute;
+  left: 400px;
+}

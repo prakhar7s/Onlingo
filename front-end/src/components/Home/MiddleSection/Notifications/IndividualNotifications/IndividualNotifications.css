@@ -1,0 +1,145 @@
+.individualNotifications {
+  margin: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 1);
+  position: relative;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+.individualNotifications:hover {
+  background-color: rgba(3, 26, 61, 0.352);
+}
+
+.individualNotifications:hover .individualNotifications__DPP img {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+.individualNotifications__DPP {
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+}
+
+.individualNotifications__DPP img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.233);
+}
+.individualNotifications__VerticalLine {
+  border: 0.5px solid #8f949b1e;
+  align-self: stretch;
+}
+
+.individualNotifications__line {
+  flex: 1;
+  margin: 10px;
+  margin-left: 7px;
+  font-family: "Lato";
+}
+
+.individualNotifications__line h2 {
+  display: inline;
+  font-size: 22px;
+  margin-left: 7px;
+  letter-spacing: 0.4px;
+  background: -webkit-repeating-linear-gradient(110deg, #d62442, #ebce28 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+}
+
+.individualNotifications__line p {
+  display: inline;
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  word-spacing: 1px;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.individualNotifications__time {
+  display: inline;
+  font-size: 13.5px;
+  font-weight: bolder;
+  margin-left: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.individualNotifications__time h1 {
+  display: inline;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.individualNotifications__button {
+  margin: 0;
+  display: inline;
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  width: 140px;
+}
+
+.individualNotifications__button button {
+  margin: 9px;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: 0;
+  cursor: pointer;
+  transition: all 500ms linear;
+  text-transform: capitalize;
+  font-family: "Roboto";
+  border-width: 0;
+  outline: none;
+  padding: 12px;
+  padding-right: 40px;
+  margin-top: 6px;
+  background: -webkit-repeating-linear-gradient(60deg, #e00f32, #ebce28 90%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  width: 164px;
+}
+
+.individualNotifications__button button:hover {
+  transform: scale(1.05);
+}
+
+.userProfileInNotification {
+  position: fixed;
+  width: 77%;
+  height: 100%;
+  top: 0;
+  left: 23%;
+  background-color: rgb(9, 9, 44);
+  transition: 1s ease-in-out;
+  z-index: 1;
+}
+
+.userProfileInNotification__closeButton {
+  position: absolute;
+  z-index: 1;
+  font-size: 25px;
+  font-weight: lighter;
+  outline: 0;
+  border-width: 0;
+  padding: 10px;
+  padding-top: 13px;
+  padding-left: 8px;
+  background: transparent;
+  color: rgb(250, 8, 8);
+  cursor: pointer;
+}
+
+/* hide x of allComments */
+.userProfileInNotification .allPostsComments__closeButton button {
+  visibility: hidden;
+}

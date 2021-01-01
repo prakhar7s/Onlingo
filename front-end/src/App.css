@@ -1,0 +1,16 @@
+html {
+  height: 100vh;
+  background-color: rgb(44, 36, 36);
+}
+
+/* .app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin-top: -15px;
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);/
+  background-size: cover;
+  padding-bottom: 15px;
+  overflow: hidden;
+  overflow-x: hidden;
+} */

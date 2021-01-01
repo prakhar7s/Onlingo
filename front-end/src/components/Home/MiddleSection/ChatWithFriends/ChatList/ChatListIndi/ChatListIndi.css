@@ -1,0 +1,70 @@
+.chatListIndi {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(129, 129, 129, 0.408);
+  border-radius: 7px;
+  margin: 10px;
+  padding: 7px 7px;
+  cursor: pointer;
+  position: relative;
+}
+
+.chatListIndi:hover {
+  background-color: rgba(39, 199, 211, 0.22);
+}
+
+.chatListIndi:hover img {
+  border: 3px solid rgba(128, 128, 128, 0.6);
+}
+
+.friendsProfilePhoto {
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.friendsProfilePhoto img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid rgba(128, 128, 128, 0.4);
+}
+
+.friendsNameAndMessage {
+  font-family: "Roboto", sans-serif;
+  margin: 2px 3%;
+  width: 100%;
+  margin-bottom: 0;
+  /* background-color: rebeccapurple; */
+  overflow: hidden;
+}
+.friendsNameAndMessage h1 {
+  font-size: 15px;
+  margin: 0px 5px;
+  width: 100%;
+}
+
+.friendsNameAndMessage p {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 1px 5px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bolder;
+}
+
+.friendsNameAndMessage h2 {
+  font-size: 12px;
+  background: -webkit-repeating-linear-gradient(70deg, #ffbb00, #ff2600 60%);
+  background-clip: text;
+  font-weight: 800;
+  -webkit-text-fill-color: transparent;
+  /* width: 100%; */
+  font-family: "Roboto";
+  position: relative;
+  margin: 2px;
+  margin-left: 5px;
+  margin-top: 5px;
+}

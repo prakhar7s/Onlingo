@@ -1,0 +1,34 @@
+.friendsHeading {
+  font-family: "Lato", sans-serif;
+  margin: 20px 0px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* .friendsHeading:after {
+  position: absolute;
+  bottom: -3px;
+  content: "--------x--------";
+  left: 45.3%;
+  background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  font-weight: lighter;
+} */
+
+.friendsListAll {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.youDontHaveFriends {
+  color: rgba(255, 255, 255, 0.726);
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  width: 200%;
+  line-height: 500px;
+}

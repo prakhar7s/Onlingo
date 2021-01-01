@@ -1,0 +1,50 @@
+.rightSection {
+  /* background: skyblue;
+   
+    */
+  background-color: #f3f2f2;
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+}
+
+.search {
+  border: 1px solid sienna;
+  margin: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.search > input {
+  border: none;
+  outline-width: 0;
+  background: transparent;
+  border-bottom: 1px solid red;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.search > button {
+  visibility: hidden;
+}
+
+.story__area {
+  border: 1px solid salmon;
+  margin: 20px;
+  width: 85%;
+  height: 200px;
+}
+
+.x {
+  border: 1px solid salmon;
+  height: auto;
+  margin: 20px;
+}
+
+/* .rightSection > button.active {
+  transform: translateX(-100px);
+}
+
+.rightSection.active {
+  transform: translateX(100px);
+} */

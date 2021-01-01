@@ -1,0 +1,140 @@
+.friendsListIndi {
+  margin: 30px;
+  position: relative;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 1s ease-in-out;
+  display: flex;
+  height: 280px;
+  border-radius: 10px;
+  background-color: #a6cda2;
+  cursor: pointer;
+}
+
+.friendsListIndiLeft {
+  height: 100%;
+  justify-content: space-evenly;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 45%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.friendsListIndi:nth-child(even) {
+  background: linear-gradient(#c2463b, #a34037);
+}
+
+.friendsListIndi:nth-child(odd) {
+  background: linear-gradient(#139e56, #0c914c);
+}
+
+.friendsListIndi__DP .MuiAvatar-root {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.493);
+}
+
+.friendsListIndiContents {
+  color: black;
+  transition: 200ms all linear;
+  width: 95%;
+  height: 100%;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* .friendsListIndiContents:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+} */
+
+.friendsList__indiName {
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
+  padding: 10px;
+  font-size: 24px;
+  background: -webkit-repeating-linear-gradient(10deg, #dcfd8d, #fca58f 90%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+}
+
+.friendsListIndiLeft h1 {
+  color: rgba(255, 255, 255, 0.89);
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.friendsList__bio {
+  padding: 5px 10px;
+  padding-left: 25px;
+  height: 90px;
+  width: 250px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden;
+  font-weight: bolder;
+  line-height: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.friendsList__Time {
+  position: absolute;
+  bottom: 0px;
+  width: 62%;
+  left: 35%;
+  height: 28px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  /* background-color: rebeccapurple; */
+}
+
+.friendsList__ViewProfile {
+  outline: none;
+  border-width: 0;
+  padding: 10px 0px;
+  width: 30%;
+  position: absolute;
+  bottom: 50px;
+  /* color: white; */
+
+  left: 51%;
+  font-family: "Roboto";
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.781);
+  font-size: 14px;
+  /* border: 1px solid salmon; */
+}
+/* XXXX */
+.friends__profileContainer {
+  position: fixed;
+  width: 77%;
+  height: 100%;
+  top: 0;
+  left: 23%;
+  background-color: rgb(5, 3, 36);
+  transition: 1s ease-in-out;
+  z-index: 1;
+}
+
+.friends__profileContainer__CloseButton {
+  position: fixed;
+  color: rgb(236, 11, 11);
+  top: 10px;
+  left: 23.6%;
+  z-index: 100;
+  background-color: transparent;
+  outline: none;
+  border-width: 0;
+  font-size: 25px;
+}

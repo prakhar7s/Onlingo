@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.specificProfile {
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(245, 242, 240, 0.1);
+  /* margin-top: 20px; */
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: #080c2c;
+  outline: 0;
+}
+
+.specificProfile::-webkit-scrollbar {
+  width: 10px;
+}
+
+.profileEverthing {
+  position: fixed;
+  height: 100%;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cover {
+  width: 105%;
+  height: 75%;
+  min-width: 100%;
+  min-height: 80%;
+  margin-top: 0px;
+}
+
+.cover img {
+  width: 99.4%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: 6px 19px 38px rgba(0, 0, 0, 0.8), 0 5px 7px rgba(0, 0, 0, 0.52);
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.profileAvatar {
+  position: absolute;
+  left: 5%;
+  bottom: 0%;
+  height: 28%;
+  width: 20%;
+  z-index: 100;
+}
+
+.profileAvatar img {
+  padding: 0.5px;
+  height: 97%;
+  width: 97%;
+  transition: all 900ms ease-in-out;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 6px 19px 38px rgba(0, 0, 0, 0.8), 0 15px 12px rgba(0, 0, 0, 0.52);
+  /* border: 2px solid rgba(10, 231, 58, 0.5); */
+  /* border: 0.1px solid rgba(255, 255, 255, 0.4); */
+}
+
+.profileAvatar img:hover {
+  transform: scale(1.02);
+}
+
+.profileContent {
+  margin-top: 22%;
+  padding-left: 12%;
+  width: 100%;
+  height: 100%;
+}
+
+.specificProfile__Name {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+}
+
+.specificProfile__Name h2 {
+  padding-top: 10px;
+  background: -webkit-repeating-linear-gradient(110deg, #d62442, #ebce28 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  color: white;
+  display: inline;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.addFriends__button {
+  width: 16%;
+  background-color: transparent;
+  padding: 15px 20px;
+  font-size: 20px;
+  /* border: 1px solid rgba(115, 115, 240, 0.7); */
+  /* border: 1px solid rgba(0, 255, 255, 0.7); */
+  color: rgb(255, 255, 255, 1);
+  font-family: "Lato", sans-serif;
+  transition: all 100ms ease-in-out;
+  margin-top: 5%;
+  margin-left: 83%;
+  border-width: 0;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.addFriends__button:hover {
+  /* border: 0.1px solid rgba(0, 255, 255, 0.1); */
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.publicInformations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -4%;
+  border-radius: 13px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+}
+.publicInformations__inner {
+  width: 133px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  transition: all 300ms ease-in;
+
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.publicInformations__inner:hover {
+  background-color: rgba(205, 205, 247, 0.15);
+  border: none;
+  border-radius: 10px;
+}
+
+.publicInformations__inner:nth-child(2) {
+  border-left: 1px solid rgba(236, 227, 227, 0.4);
+  border-right: 1px solid rgba(236, 227, 227, 0.4);
+}
+
+.publicInformations__inner h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+.publicInformations__inner h2 {
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(0, 204, 255);
+  font-weight: bolder;
+  font-family: "Lato", sans-serif;
+}
+
+.UsernameOf__profile h2 {
+  margin-top: 113px;
+  margin-bottom: 40px;
+  /* color: rgb(0, 255, 255); */
+  color: white;
+  font-size: 21px;
+  width: 50%;
+  top: 100%;
+  position: absolute;
+  font-family: "Lato";
+  font-weight: bolder;
+}
+
+.profileBio {
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  line-height: 35px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  width: 92%;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  padding: 10px;
+  white-space: pre;
+  position: relative;
+  overflow: hidden;
+}
+
+.postHeadline {
+  width: 94%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.postHeadline__line {
+  flex: 1;
+  width: 30px;
+  height: 2px;
+  background-color: rgba(141, 141, 134, 0.2);
+}
+
+.postHeadline__text {
+  color: rgba(244, 245, 247, 0.8);
+  margin: 20px;
+  transition: all 200ms ease-in-out;
+  font-size: 12px;
+  letter-spacing: 4px;
+  /* Gradient text */
+  background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.postHeadline__text:hover {
+  color: rgba(244, 245, 247, 1);
+  transform: scale(1.05);
+}
+
+.specificProfile__allPosts {
+  border: 1px solid rgb(236, 227, 227, 0.1);
+  width: 94%;
+  margin: 0px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 10px;
+}
+
+/* for searched profiles */
+.profileContainer .UsernameOf__profile h2 {
+  top: 109%;
+}
+
+.profileContainer .profileAvatar {
+  width: 20%;
+  height: 37%;
+}

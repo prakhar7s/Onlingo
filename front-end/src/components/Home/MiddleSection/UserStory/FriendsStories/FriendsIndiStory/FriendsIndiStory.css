@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+.friendStoryIndi .yourStoryUploaded {
+  margin: 20px 15px;
+}
+
+.friendStoryIndi .yourName {
+  color: rgba(225, 227, 230, 0.938);
+  font-family: "Mulish", sans-serif;
+  margin: 15px 0px;
+  width: 100px;
+  text-align: center;
+  left: -10px;
+  position: absolute;
+}
+
+@keyframes starting {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(1px);
+  }
+}

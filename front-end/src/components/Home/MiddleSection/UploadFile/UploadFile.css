@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.uploadFile {
+  width: 90%;
+  height: 90%;
+  border-radius: 30px;
+  /* background: linear-gradient(to right bottom, #323941, #061018); */
+  background: linear-gradient(to right bottom, #020202, #000000);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(2, 22, 109, 0.479);
+
+  opacity: 0.98;
+  font-family: "Cairo", sans-serif;
+  color: white;
+  position: relative;
+  animation: fade 200ms linear;
+}
+
+.fileUpload .crossButton {
+  backdrop-filter: blur(10px);
+  background-color: rgba(199, 37, 16, 0.979);
+  font-weight: bolder;
+  font-size: 14px;
+  border-radius: 50%;
+  outline: none;
+  border-width: 0;
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.uploadContainer {
+  flex: 1;
+  height: 96%;
+  margin-bottom: 20px;
+}
+
+.heading {
+  width: 91.5%;
+  margin: 20px 56px 10px;
+  border-bottom: 2px solid rgba(87, 82, 82, 0.37);
+}
+
+.heading > h1 {
+  font-size: 22px;
+}
+
+.fileUpload {
+  width: 97%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dragFile {
+  width: 33%;
+  height: 96%;
+  margin: 5px;
+  margin-right: 0;
+  position: relative;
+}
+
+.dragFile > h1 {
+  font-size: 15px;
+  margin: 2px;
+  margin-left: 37px;
+  margin-bottom: 10px;
+}
+
+.dragzone {
+  border: 2px dashed #f5897d;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  left: 25px;
+  border-radius: 20px;
+}
+
+.fileDrop {
+  border: 3px dashed red;
+}
+
+.lineContainer {
+  height: 90%;
+  width: 4px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.line {
+  background-color: rgba(92, 88, 88, 0.445);
+  width: 2px;
+  height: 35%;
+}
+
+.lineContainer > h1 {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.selectFile {
+  height: 96%;
+  width: 25%;
+  margin-left: 20px;
+}
+
+.selectFile > h1 {
+  font-size: 15px;
+  margin: 2px;
+  margin-bottom: 10px;
+  margin-left: 6px;
+}
+
+.selectTo__upload {
+  border: 1.7px solid #f5897d;
+  width: 97%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.file {
+  color: transparent;
+  border: none;
+  outline-width: 0;
+  position: relative;
+  height: 50px;
+  width: 60%;
+}
+
+.file::before {
+  content: "PICK A FILE";
+  font-family: "Roboto", sans-serif;
+  color: #e93017;
+  background-color: white;
+  position: absolute;
+  width: 100px;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 15px;
+  padding-left: 10px;
+  margin-left: 6px;
+  font-size: 16px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+}
+
+.verticalLine {
+  height: 90%;
+  width: 2px;
+  background-color: rgba(92, 88, 88, 0.445);
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.selectedFiles {
+  height: 60%;
+  width: 29%;
+  position: absolute;
+  top: 18%;
+  left: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectedFiles > h1 {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 11px;
+}
+
+.fileContainer {
+  margin-top: 7px;
+  width: 100%;
+  height: 70%;
+  border: 1px solid #eb6a5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noSelection__message {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.imageContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* image */
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* video */
+.video {
+  margin-top: 10px;
+}
+
+/* audio */
+.audio {
+  margin-top: 70px;
+  z-index: 100;
+}
+.crossButton {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: none;
+}
+
+.imageContainer:hover .crossButton {
+  display: block;
+}
+
+.fileInformation__SizeName {
+  width: 300px;
+  font-size: 10px;
+  margin-top: 250px;
+  margin-left: 11px;
+  color: rgb(101, 252, 1);
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+.seletedFile__name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 88%;
+  word-break: break-all;
+  overflow: hidden;
+}
+.seletedFile__size {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 88%;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.message {
+  height: 20%;
+  width: 93%;
+  margin: 40px;
+  margin-top: 34px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  border-top: 2px solid rgba(87, 82, 82, 0.37);
+}
+
+.message > textarea {
+  height: 26px;
+  margin: 13px;
+  margin-left: 0;
+  margin-right: 0;
+  outline: none;
+  border-width: 0;
+  background-color: rgb(235, 231, 231);
+  font-size: 18px;
+  padding: 4px;
+  resize: none;
+  font-size: 14px;
+  flex: 1;
+  color: black;
+  border-radius: 8px;
+  font-family: "Cairo";
+  font-weight: bolder;
+  padding-left: 14px;
+}
+
+.message > textarea::placeholder {
+  font-size: 14px;
+  background: -webkit-repeating-linear-gradient(320deg, #0954c5, #e23a06 10%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+.emojiContainer {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.messageEmojiAndButton {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+  position: relative;
+}
+.messageEmojiAndButton .emojiContainer h2 {
+  transition: all 300ms ease-in-out;
+  margin: 2px;
+  margin-bottom: 0;
+  font-size: 23px;
+}
+
+.messageEmojiAndButton .emojiContainer h2:hover {
+  transform: scale(1.4);
+}
+
+.messageEmojiAndButton button {
+  outline: 0;
+  border: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 10px;
+  background: transparent;
+  position: absolute;
+  top: 17px;
+  left: -30px;
+}
+
+/* .messageEmojiAndButton button:after {
+  position: absolute;
+  height: 34px;
+  width: 30px;
+  left: 0;
+  top: 13px;
+  z-index: -1;
+  content: "";
+  background-color: rgb(235, 231, 231);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+} */
+
+/* upload bar */
+.uploadingBarContainer {
+  background-color: rgba(14, 13, 14, 0.6);
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  backdrop-filter: blur(2px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(9, 235, 148, 0.1);
+}
+
+.uploadingBarContainer .uploadingBar__Percenntages {
+  margin-top: 12%;
+  font-family: "Roboto", sans-serif;
+}
+
+.uploadingBar {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.uploadingBar i {
+  font-size: 180px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.uploadingBar__arrow {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 35%;
+  left: 27%;
+  width: 40%;
+  overflow: hidden;
+}
+
+.uploadingBar__arrow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 100;
+}
+
+.uploadingBar__arrow .MuiSvgIcon-root {
+  font-size: 80px;
+  position: absolute;
+  animation: xx 0.8s infinite;
+  color: rgb(11, 177, 243);
+}
+
+@keyframes xx {
+  0% {
+    bottom: -45%;
+  }
+  100% {
+    bottom: 90%;
+    border-top: 12px solid salmon;
+  }
+}
+
+.uploadingBar__Percenntages {
+  color: white;
+  height: 0%;
+  font-size: 20px;
+}

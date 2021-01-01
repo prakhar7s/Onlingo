@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
+
+.storyCreaterForU {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.storyCreaterForU h1 {
+  font-size: 28px;
+  position: relative;
+}
+/* 
+.StoryCreaterForUHeading::after {
+  position: absolute;
+  bottom: -10px;
+  content: "--------------x--------------";
+  left: 24px;
+  background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  font-weight: lighter;
+} */
+
+.storyCreaterForUMainSection {
+  background-color: navy;
+  height: 70%;
+  width: 90%;
+  display: flex;
+  border-radius: 13px;
+  position: relative;
+  margin-top: 3%;
+  margin-bottom: 1.5%;
+  cursor: pointer;
+}
+
+.storyPhotoDisplay {
+  width: 70%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+.storyPhotoDisplay img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+.storyPhotoDisplay__unselect {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 590px;
+  padding: 3px;
+  background: transparent;
+  border-width: 0;
+  outline: none;
+  font-family: "Cairo", sans-serif;
+  color: red;
+  font-weight: bolder;
+  backdrop-filter: blur(10px);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.storyCreaterForUOptionsSection {
+  /* background-color: black; */
+  position: absolute;
+  border-bottom: 469px solid rgb(7, 1, 39);
+  border-left: 10px solid transparent;
+  right: 0%;
+  width: 30%;
+}
+
+.selectedStoryPhoto {
+  position: absolute;
+  top: 38px;
+  left: 70px;
+  color: transparent;
+  height: 40px;
+  width: 120px;
+  outline: none;
+  border-width: 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.selectedStoryPhoto::before {
+  content: "Pick Image";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(130deg, #14748b, #bbd814);
+  color: black;
+  border-radius: 10px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 4px 23px;
+}
+
+.backgroundGuide {
+  position: absolute;
+  top: 1px;
+  font-size: 16px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.9);
+
+  text-align: center;
+}
+
+.backgroundGuide::after {
+  content: "---OR---";
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  top: 90px;
+  left: 27%;
+  font-size: 16px;
+  width: 120px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+.randomBackgroundGuide {
+  position: absolute;
+  top: 125px;
+  font-size: 16px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+}
+.randomBackgroundGenerator {
+  position: absolute;
+  top: 167px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.randomBackgroundGenerator button {
+  padding: 0px 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  background: transparent;
+  color: rgba(18, 219, 109, 0.877);
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid rgba(135, 135, 136, 0.186);
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.randomBackgroundGenerator button:first-child::before {
+  content: "or";
+  position: absolute;
+  top: -2px;
+  right: -36px;
+  color: rgba(255, 255, 255, 0.911);
+}
+.randomBackgroundGenerator button:first-child::after {
+  content: "____________________________";
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  width: 275px;
+  bottom: -26px;
+  left: -34px;
+  font-weight: lighter;
+}
+
+.wrriteSomething__button {
+  position: absolute;
+  top: 234px;
+  padding: 4px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  left: 70px;
+  font-size: 15px;
+  width: 130px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid rgba(175, 175, 180, 0.132);
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.writeSomthing__input {
+  position: absolute;
+  left: -233%;
+  resize: none;
+  background: transparent;
+  height: 420px;
+  width: 190%;
+  margin: 25px;
+  outline: 0;
+  border-width: 0;
+  font-size: 16px;
+  color: white;
+  background-clip: text;
+  cursor: pointer;
+
+  padding: 10px;
+}
+
+.changeFonts {
+  position: absolute;
+  top: 290px;
+  display: flex;
+}
+
+.changeFonts h1 {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.changeFonts button {
+  font-size: 28px;
+  /* padding: 5px 10px; */
+  margin: 0 30px;
+  background-color: transparent;
+  outline: none;
+  border-width: 0;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 7px;
+  background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.storyPhotoDisplay__Done {
+  cursor: pointer;
+
+  position: absolute;
+  top: 432px;
+  left: 75px;
+  padding: 1px;
+  background: transparent;
+  border-width: 0;
+  outline: none;
+  font-family: "Cairo", sans-serif;
+  font-weight: bolder;
+  background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  font-size: 15px;
+  border-radius: 7px;
+  color: rgb(252, 247, 247);
+  width: 120px;
+  border: 1px solid rgba(255, 249, 249, 0.144);
+}
+
+.userEnteredText {
+  position: absolute;
+  left: -223%;
+  width: 190%;
+  height: 420px;
+  margin: 25px;
+  margin-left: 0px;
+  white-space: pre;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-clip: text;
+}
+.changeFontStyle {
+  position: absolute;
+  top: 387px;
+  display: flex;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.changeFontStyle select {
+  background-color: rgba(194, 49, 5, 0.966);
+  outline: 0;
+  border-width: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: white;
+  padding: 2px;
+  margin-left: 65px;
+  font-size: 14px;
+}
+
+.changeFontStyle select option {
+  font-weight: bolder;
+  cursor: pointer;
+}
+.changeFontStyle select option:hover {
+  background-color: blue;
+  color: rebeccapurple;
+}
+
+.changeFontStyle h1 {
+  font-size: 15px;
+}
+.changeWeight {
+  position: absolute;
+  top: 355px;
+  display: flex;
+}
+
+.changeWeight h1 {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.changeWeight h2 {
+  font-size: 17px;
+  margin-left: 35px;
+  background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.setTextColor {
+  position: absolute;
+  top: 323px;
+  display: flex;
+}
+.setTextColor button {
+  padding: 4px;
+  margin: 0 5px;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  outline: none;
+  border-width: 0;
+  color: white;
+  background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.setTextColor h1 {
+  font-size: 14.9px;
+  color: rgba(255, 255, 255, 0.9);
+}
+/* create story button */
+.createStoryButton {
+  padding: 8px 12px;
+  font-family: "Lato";
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.749);
+  font-weight: bolder;
+  outline: none;
+  border-width: 0;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 140px;
+  backdrop-filter: blur(5px);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.createStoryButton:hover {
+  color: rgba(255, 255, 255, 1);
+}

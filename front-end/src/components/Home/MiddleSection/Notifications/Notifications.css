@@ -1,0 +1,123 @@
+.notifications {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.notificationsHeading h1 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  /* background-color: red; */
+  position: relative;
+}
+/* 
+.notificationsHeading h1:after {
+  position: absolute;
+  bottom: -9px;
+  content: "------------x------------";
+  left: 44%;
+  background: -webkit-repeating-linear-gradient(110deg, #ffa000, #ff5000 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  font-weight: lighter;
+} */
+
+.notificationsHeading .MuiSvgIcon-root {
+  top: 0px;
+  margin-left: 7px;
+  position: absolute;
+  /* background-color: red; */
+  font-size: 33px;
+  /* margin-top: 3px; */
+}
+.notificationContainer__waiting {
+  text-align: center;
+}
+
+/* //fetching frinds posts */
+/* const useFriendsPost = (username) => {
+  const [friendPosts, setDocs] = useState([]);
+
+  useEffect(() => {
+    const unsub = projectFirestore
+      .collection("users")
+      .doc(username)
+      .collection("friends")
+      .get()
+      .then((snap) => {
+        let documents = [];
+        snap.forEach((doc) => {
+          projectFirestore
+            .collection("users")
+            .doc(doc.data().username)
+            .collection("posts")
+            .onSnapshot((snap) => {
+              snap.forEach((doc) => {
+                documents.push({ ...doc.data(), id: doc.ref });
+              });
+            });
+        });
+        setDocs(documents);
+      });
+
+    return () => unsub();
+  }, [username]);
+
+  return friendPosts;
+}; */
+
+/* 
+
+//new
+//fetching frinds posts
+const useFriendsPost = (username) => {
+  const [friendPosts, setDocs] = useState([]);
+
+  useEffect(() => {
+    const unsub = projectFirestore
+      .collection("users")
+      .doc(username)
+      .collection("friends")
+      .onSnapshot((snap) => {
+        snap.forEach((doc) => {
+          projectFirestore
+            .collection("users")
+            .doc(doc.data().username)
+            .collection("posts")
+            .onSnapshot((snap) => {
+              const temp = snap.forEach((doc) => ({
+                ...doc.data(),
+                id: doc.ref,
+              }));
+              setDocs(temp);
+              debugger;
+            });
+        });
+      });
+
+    return () => unsub();
+  }, []);
+
+  return friendPosts;
+}; */
+
+.notificationContainer__waitingNoNotifications {
+  font-family: "Cairo";
+  font-size: 20px;
+  line-height: 550px;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+.notificationContainer__waitingLoading {
+  font-family: "Cairo";
+  font-size: 20px;
+  line-height: 550px;
+  color: rgba(255, 255, 255, 0.781);
+}

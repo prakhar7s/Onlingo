@@ -1,0 +1,435 @@
+/* overridden style */
+
+.userspecificProfile {
+  position: fixed;
+  width: 76.5vw;
+  height: 99vh;
+  top: 47.5%;
+  left: 56.5%;
+  transform: translate(-48.3%, -48%);
+  border: 1px solid rgba(245, 242, 240, 0.1);
+  margin-left: 48px;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  /* background-color: #141414; */
+  background-color: #080c2c;
+  /* background-color: rgba(24, 38, 61, 0.753); */
+  outline: 0;
+}
+
+.userspecificProfile .cover {
+  width: 109%;
+  height: 70%;
+  min-width: 100%;
+  min-height: 80%;
+  margin-left: 10px;
+  position: relative;
+}
+
+.userHomeProfile__editButton {
+  position: absolute;
+  right: 30px;
+  bottom: -90px;
+  outline: none;
+  border-width: 0;
+  font-family: "Lato";
+  font-weight: bolder;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 15px 20px;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.userspecificProfile .cover img {
+  padding: 0.5px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: 0.1px solid rgba(255, 255, 255, 0.15);
+}
+
+.userspecificProfile .profileAvatar {
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+  height: 180px;
+  width: 180px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.userspecificProfile .profileContent {
+  margin-top: 20%;
+}
+
+.userspecificProfile .specificProfile__Name h2 {
+  font-size: 23px;
+  color: white;
+  display: inline;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  text-transform: none;
+  top: 0;
+}
+.profileBio {
+  position: absolute;
+  border-radius: 12px;
+}
+.profileBio::after {
+  content: attr(data-attribute) "'s bio";
+  color: rgba(255, 255, 255, 0.15);
+  font-family: "Lato", sans-serif;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.userspecificProfile .specificProfile__Name h2:first-child {
+  background: -webkit-repeating-linear-gradient(110deg, #d62442, #ebce28 80%);
+  background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  word-break: break-all;
+}
+
+.userspecificProfile .UsernameOf__profile h2 {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-top: 110px;
+  font-weight: bolder;
+  letter-spacing: 0.4px;
+}
+
+.userspecificProfile .publicInformations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  right: -40px;
+  position: relative;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  height: 100px;
+}
+
+.profileBio__noBio {
+  color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  display: block;
+  margin-top: 10%;
+  text-transform: capitalize;
+}
+
+/* uploader */
+.userHomePage__uploading {
+  background-color: rgba(0, 0, 0, 0.45);
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: bolder;
+  font-family: "Lato", sans-serif;
+  color: white;
+  display: none;
+  z-index: 100;
+  font-size: 27px;
+  height: 100%;
+}
+
+.userHomePage__editContainer1 {
+  height: 105%;
+  width: 100%;
+  top: 3px;
+  position: fixed;
+  z-index: 4;
+  display: none;
+  overflow: scroll;
+  background-color: rgba(7, 14, 31, 0.774);
+  overflow-x: hidden;
+}
+
+.userHomePage__editContainer1::-webkit-scrollbar {
+  width: 10px;
+}
+
+.userHomePage__editContainer1::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.877);
+}
+.userHomePage__editContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 105%;
+}
+
+.userHomePage__editContainer h1 {
+  font-size: 20px;
+  margin: 20px;
+  color: white;
+  margin-left: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.userHomePage__editContainerImages {
+  margin: 10px;
+  display: flex;
+  height: 43%;
+  width: 90%;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.userHomePage__editContainerDP {
+  position: relative;
+}
+
+.userHomePage__editContainerDP:hover .profileAvatar__input {
+  display: block;
+}
+
+.userHomePage__editContainerDPPreview {
+  height: 220px;
+  width: 230px;
+  object-fit: contain;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+.userHomePage__editContainerDPPreview img {
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.profileAvatar__input {
+  color: transparent;
+  border: none;
+  outline-width: 0;
+  position: absolute;
+  top: 20.5%;
+  width: 100%;
+  height: 84.5%;
+  border-radius: 0px;
+
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.profileAvatar__input::before {
+  visibility: visible;
+  content: "Change";
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  background-color: rgba(3, 8, 32, 0.648);
+  font-family: "Lato", sans-serif;
+
+  border-radius: 7px;
+
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+  font-size: 19px;
+  opacity: 1;
+  font-weight: bolder;
+  letter-spacing: 1.05px;
+  text-align: center;
+  line-height: 220px;
+}
+
+.userHomePage__editContainerCover {
+  position: relative;
+}
+
+.userHomePage__editContainerCover:hover .cover__input {
+  display: block;
+}
+
+.userHomePage__editContainerCoverPreview {
+  height: 200px;
+  width: 280px;
+  object-fit: contain;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.38), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.userHomePage__editContainerCoverPreview img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.cover__input {
+  color: transparent;
+  border: none;
+  outline-width: 0;
+  position: absolute;
+  width: 99.9%;
+  height: 77.7%;
+  display: none;
+  border-radius: 20px;
+  visibility: hidden;
+  top: 20.3%;
+}
+
+.cover__input::before {
+  content: "Change";
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: rgba(3, 8, 32, 0.648);
+  opacity: 1;
+  visibility: visible;
+  border-radius: 20px;
+  line-height: 190px;
+  text-align: center;
+
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  cursor: pointer;
+  padding: 7px;
+  padding-left: 10px;
+  font-size: 19px;
+  font-weight: bolder;
+  letter-spacing: 1.05px;
+  border-bottom-right-radius: 18%;
+}
+
+.editProfileNameAndBioContainer {
+  width: 75%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.editProfileNameAndBioContainer button {
+  border-width: 0;
+  outline: none;
+  align-self: center;
+  padding: 5px;
+  margin-left: 28px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgb(76, 77, 76);
+  position: relative;
+  border-radius: 5px;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 1.01px;
+  padding-right: 30px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.897);
+  align-self: flex-end;
+  font-weight: bolder;
+}
+.editProfileNameAndBioContainer button:hover {
+  border: 1px solid rgb(24, 24, 207);
+  color: rgba(255, 255, 255, 1);
+}
+
+.editProfileName {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Cairo", sans-serif;
+}
+
+.editProfileName h2 {
+  color: white;
+  font-size: 17px;
+}
+
+.editProfileName div {
+  display: flex;
+  margin: 10px 0;
+}
+
+.editProfileNameTextArea {
+  flex: 1;
+  outline: none;
+  border-width: 0;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: rgb(3, 3, 3);
+  color: white;
+  font-family: "Cairo", sans-serif;
+  text-transform: capitalize;
+  padding-top: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.editProfileNameTextArea::placeholder {
+  color: rgba(255, 255, 255, 0.495);
+}
+
+.editProfileBio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.editProfileBio h2 {
+  color: white;
+  font-size: 17px;
+}
+
+.editProfileBio div {
+  display: flex;
+  margin: 10px 0;
+}
+
+.editProfileNameBio {
+  flex: 1;
+  height: 70px;
+  resize: none;
+  padding: 10px;
+  outline: none;
+  border-width: 0;
+  line-height: 22px;
+  font-size: 19px;
+  padding-top: 3px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  font-family: "Cairo", sans-serif;
+  padding-top: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.editProfileNameBio::placeholder {
+  color: rgba(255, 255, 255, 0.495);
+}
+
+/* close button */
+
+.userHomePage__editContainerCloseButton {
+  background-color: transparent;
+  color: red;
+  outline: none;
+  border-width: 0;
+  position: absolute;
+  right: 0;
+  margin: 7px 10px;
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-start;
+  width: 98%;
+}

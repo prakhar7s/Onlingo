@@ -72,39 +72,39 @@ const LeftSection = ({
   //   }, 1000);
   // }, []);
 
-  useEffect(() => {
-    fetch("http://localhost:3002/youractivity", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        username: username,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {});
+  // useEffect(() => {
+  //   fetch("http://localhost:3002/youractivity", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({
+  //       username: username,
+  //     }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {});
 
-    fetch("http://localhost:3002/loginSession", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        loginid: loginID,
-        username,
-        logindate: new Date().toLocaleDateString(),
-        loginat: new Date().toLocaleTimeString(),
-      }),
-    }).then((res) => {});
+  //   fetch("http://localhost:3002/loginSession", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({
+  //       loginid: loginID,
+  //       username,
+  //       logindate: new Date().toLocaleDateString(),
+  //       loginat: new Date().toLocaleTimeString(),
+  //     }),
+  //   }).then((res) => {});
 
-    setInterval(() => {
-      fetch("http://localhost:3002/lastSeen", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          loginid: loginID,
-          lastseen: new Date().toLocaleTimeString(),
-        }),
-      }).then((res) => {});
-    }, 2000);
-  }, []);
+  //   setInterval(() => {
+  //     fetch("http://localhost:3002/lastSeen", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({
+  //         loginid: loginID,
+  //         lastseen: new Date().toLocaleTimeString(),
+  //       }),
+  //     }).then((res) => {});
+  //   }, 2000);
+  // }, []);
 
   function checkCount(count) {
     return count == "no" ? 0 : count;

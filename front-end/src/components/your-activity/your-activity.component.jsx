@@ -29,19 +29,19 @@ const YourActivity = ({ searchE, username }) => {
   }
 
   useEffect(() => {
-    fetch("http://localhost:3002/youractivity", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        username: username,
-        noOfDays,
-      }),
-    })
-      .then((response) => response.json())
-      .then((activities) => {
-        setActivities(activities);
-        console.log(activities);
-      });
+    // fetch("http://localhost:3002/youractivity", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify({
+    //     username: username,
+    //     noOfDays,
+    //   }),
+    // })
+    //   .then((response) => response.json())
+    //   .then((activities) => {
+    //     setActivities(activities);
+    //     console.log(activities);
+    //   });
   }, [noOfDays]);
 
   const maxHeight = 100;

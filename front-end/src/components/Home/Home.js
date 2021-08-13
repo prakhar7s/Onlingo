@@ -101,6 +101,7 @@ const Home = ({ username, onRouteChange }) => {
   return (
     <div className="home">
       <div className="sections">
+        s
         <LeftSection
           userName={userName}
           friendsCount={friendsCount}
